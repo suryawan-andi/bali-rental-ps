@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Siswa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<div id="top-progress"></div>
+<body>
+  <div class="app">
+
+    <nav class="sidebar" aria-label="Menu utama">
+      <div class="side-top">
+        <div class="brand">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></svg>
+          </div>
+          <div class="brand-name">Rental PS</div>
+        </div>
+
+        <div class="menu">
+          <a href="#" class="active">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9z"/></svg>
+            Beranda
+          </a>
+          <a href="pages/booking-saya/booking.html">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>
+            Booking saya
+          </a>
+          <a href="pages/tagihan-deposit/tagihan_deposit.html">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 13h7M9 17h5"/></svg>
+            Tagihan & Deposit
+          </a>
+          <a href="#">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg>
+            Riwayat Sewa
+          </a>
+          <a href="#">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9a6 6 0 1 1 12 0c0 6 2 7 2 7H4s2-1 2-7"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
+            Promo & Info
+          </a>
+          <a href="#">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+            Profil
+          </a>
+        </div>
+      </div>
+
+      <a href="login.html" class="logout">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4H5v16h4"/><path d="M16 8l4 4-4 4"/><path d="M20 12H9"/></svg>
+        Keluar
+      </a>
+    </nav>
+
+    <main class="content">
+
+      <header class="topbar">
+        <div>
+          <h1>Halo, [Nama Pelanggan]</h1>
+          <p>Member [VIP] · Semester [Ganjil/Genap] [Tahun Ajaran]</p>
+        </div>
+        <div class="top-actions">
+          <button type="button" class="icon-btn" aria-label="Notifikasi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9a6 6 0 1 1 12 0c0 6 2 7 2 7H4s2-1 2-7"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
+          </button>
+          <div class="avatar" role="img" aria-label="Foto profil siswa">NS</div>
+        </div>
+      </header>
+
+      <section class="stats" aria-label="Ringkasan">
+        <div class="stat primary"><div class="label">Sisa Waktu Sewa</div><div class="value">[0,00]</div></div>
+        <div class="stat"><div class="label">Paket Aktif</div><div class="value">[00%]</div></div>
+        <div class="stat"><div class="label">Tagihan </div><div class="value">[0]</div></div>
+        <div class="stat"><div class="label">Pengumuman baru</div><div class="value">[0]</div></div>
+      </section>
+
+      <div class="panels">
+
+        <section class="card wide" aria-labelledby="judul-jadwal">
+          <h2 id="judul-jadwal">Booking hari ini</h2>
+
+          <div class="lesson">
+            <div class="time">[00.00]</div>
+            <div class="lesson-info"><strong>Matematika</strong><span>Ruang [00] · [Nama Guru]</span></div>
+            <div class="tag">Berlangsung</div>
+          </div>
+          <div class="lesson">
+            <div class="time">[00.00]</div>
+            <div class="lesson-info"><strong>Bahasa Indonesia</strong><span>Ruang [00] · [Nama Guru]</span></div>
+          </div>
+          <div class="lesson">
+            <div class="time">[00.00]</div>
+            <div class="lesson-info"><strong>Bahasa Inggris</strong><span>Ruang [00] · [Nama Guru]</span></div>
+          </div>
+          <div class="lesson">
+            <div class="time">[00.00]</div>
+            <div class="lesson-info"><strong>Fisika</strong><span>Ruang [00] · [Nama Guru]</span></div>
+          </div>
+        </section>
+
+        <section class="card narrow" aria-labelledby="judul-info">
+          <h2 id="judul-info">Pengumuman</h2>
+
+          <div class="news">
+            <div class="news-meta"><span class="tag">Baru</span> [Tanggal]</div>
+            <div class="news-title">[Judul pengumuman]</div>
+          </div>
+          <div class="news">
+            <div class="news-meta"><span class="tag">Baru</span> [Tanggal]</div>
+            <div class="news-title">[Judul pengumuman]</div>
+          </div>
+          <div class="news">
+            <div class="news-meta">[Tanggal]</div>
+            <div class="news-title">[Judul pengumuman]</div>
+          </div>
+
+          <a href="#" class="all-link">Lihat semua pengumuman</a>
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+<script src="assets/js/main.js"></script>
+</body>
+<div id="page-loader">
+  <div class="spinner"></div>
+  <p>Memuat...</p>
+</div>
+</html>

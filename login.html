@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Masuk Portal Akademik</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="login">
+
+    <section class="hero">
+      <div class="shape s1" aria-hidden="true"></div>
+      <div class="shape s2" aria-hidden="true"></div>
+      <div class="shape s3" aria-hidden="true"></div>
+
+      <div class="brand">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></svg>
+        </div>
+        <div class="brand-name">Rental PS Gunung Agung</div>
+      </div>
+
+      <div class="hero-text">
+        <h1>Sistem Rental & Booking</h1>
+        <p>Kelola unit, jadwal sewa, dan pembayaran dengan lebih mudah.</p>
+      </div>
+
+      <div class="hero-help">Butuh bantuan? Hubungi kami disini</div>
+    </section>
+
+    <main class="form-side">
+      <div class="form-card">
+
+        <div class="lang">
+          <button type="button" class="active">ID</button>
+          <button type="button">EN</button>
+        </div>
+
+        <div>
+          <h2>Selamat Datang di Sistem Rental & Booking</h2>
+          <p class="sub" style="margin-top: 8px">Masuk dengan akun rental Anda.</p>
+        </div>
+
+        <form class="fields" onsubmit="return false">
+          <div class="field">
+            <label for="akun">Nama Pengguna</label>
+            <input id="akun" type="text" placeholder="Contoh: 12345678" autocomplete="username">
+          </div>
+          <div class="field">
+            <label for="sandi">Kata sandi</label>
+              <div style="position: relative;">
+              <input id="sandi" type="password" placeholder="Masukkan kata sandi" autocomplete="current-password" style="width: 100%; padding-right: 40px;">
+              <button type="button" id="toggleSandi" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer;">👁️</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="row">
+          <label class="check"><input type="checkbox"> Ingat saya</label>
+          <a href="#" class="link">Lupa kata sandi?</a>
+        </div>
+
+        <a href="dashboard.html" class="btn">Masuk</a>
+
+        <p class="note">Belum punya akun? Buat akun</p>
+      </div>
+    </main>
+
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

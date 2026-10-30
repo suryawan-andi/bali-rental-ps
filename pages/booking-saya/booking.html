@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking saya | Rental PS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<div id="top-progress"></div>
+<body>
+  <div class="app">
+
+    <nav class="sidebar" aria-label="Menu utama">
+      <div class="side-top">
+        <div class="brand">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></svg>
+          </div>
+          <div class="brand-name">Rental PS</div>
+        </div>
+
+        <div class="menu">
+          <a href="../../dashboard.html">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9z"/></svg>
+            Beranda
+          </a>
+          <a href="./" class="active">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>
+            Booking saya
+          </a>
+          <a href="../tagihan/">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l4 4v14H6z"/><path d="M9 13h7M9 17h5"/></svg>
+            Tagihan & Deposit
+          </a>
+          <a href="../riwayat/">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg>
+            Riwayat Sewa
+          </a>
+          <a href="../promo/">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 9a6 6 0 1 1 12 0c0 6 2 7 2 7H4s2-1 2-7"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
+            Promo & Info
+          </a>
+          <a href="../profil/">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+            Profil
+          </a>
+        </div>
+      </div>
+
+      <a href="../../login.html" class="logout">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 4H5v16h4"/><path d="M16 8l4 4-4 4"/><path d="M20 12H9"/></svg>
+        Keluar
+      </a>
+    </nav>
+
+    <main class="content">
+      <header class="topbar">
+        <div>
+          <h1>Booking saya</h1>
+          <p>Lihat, ubah, atau batalkan jadwal mainmu.</p>
+        </div>
+        <div class="top-actions">
+          <a href="#form-booking" class="btn-sm primary">+ Booking baru</a>
+          <div class="avatar">NP</div>
+        </div>
+      </header>
+
+      <!-- KONTEN BOOKING KAMU YANG TADI TETAP DI SINI -->
+      <div class="panels">
+        <!-- paste isi panels kamu yang lama dari sini kebawah -->
+        <div class="panels">
+        <div class="stack">
+          <div class="tabs">
+            <button type="button" class="tab" data-filter="semua" aria-pressed="true">Semua</button>
+            <button type="button" class="tab" data-filter="terkonfirmasi">Terkonfirmasi</button>
+            <button type="button" class="tab" data-filter="menunggu">Menunggu pembayaran</button>
+          </div>
+
+          <article class="b-card" data-status="terkonfirmasi">
+            <div class="b-date"><strong>15</strong><span>Okt</span></div>
+            <div class="b-info">
+              <h3>PS5 • TV 01 - VIP Room</h3>
+              <p>14.00 – 16.00 • 2 Jam<br>Kode booking: RENT-PS5-01A</p>
+            </div>
+            <div class="b-side">
+              <span class="tag tag-ok">Terkonfirmasi</span>
+              <div class="b-price">Rp 50.000</div>
+              <div class="b-actions">
+                <a href="#" class="btn-sm outline">Ubah jadwal</a>
+                <a href="#" class="btn-sm danger">Batalkan</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="b-card" data-status="terkonfirmasi">
+            <div class="b-date"><strong>16</strong><span>Okt</span></div>
+            <div class="b-info">
+              <h3>PS4 • TV 03 - Reguler</h3>
+              <p>19.00 – 22.00 • 3 Jam<br>Kode booking: RENT-PS4-03B</p>
+            </div>
+            <div class="b-side">
+              <span class="tag tag-ok">Terkonfirmasi</span>
+              <div class="b-price">Rp 45.000</div>
+              <div class="b-actions">
+                <a href="#" class="btn-sm outline">Ubah jadwal</a>
+                <a href="#" class="btn-sm danger">Batalkan</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="b-card" data-status="menunggu">
+            <div class="b-date"><strong>18</strong><span>Okt</span></div>
+            <div class="b-info">
+              <h3>PS5 • TV 02 - VIP Room</h3>
+              <p>20.00 – 23.00 • 3 Jam<br>Kode booking: RENT-PS5-02C</p>
+            </div>
+            <div class="b-side">
+              <span class="tag">Menunggu pembayaran</span>
+              <div class="b-price">Rp 75.000</div>
+              <div class="b-actions">
+                <a href="tagihan.html" class="btn-sm primary">Bayar sekarang</a>
+                <a href="#" class="btn-sm danger">Batalkan</a>
+              </div>
+            </div>
+          </article>
+          <p class="note" id="kosong" hidden>Belum ada booking di kategori ini.</p>
+        </div>
+
+        <div class="side-stack">
+          <section class="card quick" id="form-booking">
+            <h2>Booking baru</h2>
+            <form class="qform" onsubmit="return false">
+              <div class="field"><label>Konsol</label><select><option>Pilih konsol</option><option>PS5 - VIP 25k/jam</option><option>PS4 - Reguler 15k/jam</option></select></div>
+              <div class="field"><label>Tanggal</label><input type="date"></div>
+              <div class="field-row">
+                <div class="field"><label>Jam mulai</label><input type="time"></div>
+                <div class="field"><label>Durasi</label><select><option>1 jam</option><option>2 jam</option><option>3 jam</option><option>Seharian</option></select></div>
+              </div>
+              <button class="btn-sm primary full">Cek ketersediaan</button>
+            </form>
+          </section>
+
+          <section class="card">
+            <h2>Aturan booking</h2>
+            <div class="info-list">
+              <div class="info-item"><div class="info-icon">📅</div><div><strong>Ubah jadwal</strong><span>Maksimal 2 jam sebelum main</span></div></div>
+              <div class="info-item"><div class="info-icon">❌</div><div><strong>Pembatalan</strong><span>Refund 50% jika batal H-1</span></div></div>
+              <div class="info-item"><div class="info-icon">⏰</div><div><strong>Keterlambatan</strong><span>Telat 15 menit = waktu dipotong</span></div></div>
+            </div>
+          </section>
+        </div>
+      </div>
+      </div>
+    </main>
+  </div>
+<script src="assets/js/main.js"></script>
+</body>
+<div id="page-loader">
+  <div class="spinner"></div>
+  <p>Memuat...</p>
+</div>
+</html>
